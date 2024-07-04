@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+  
+<nav class="navbar">
+    <input type="checkbox" id="navbar-toggle" class="navbar-toggle">
+    <label for="navbar-toggle" class="navbar-toggle-label">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+    <div class="container">
+        <div class="navbar-logo">
+            <a href="#home">
+                <img src="art-gallery-logo-template-91b3cd-removebg-preview.png" alt="Logo">
+            </a>
+        </div>
+        <ul class="navbar-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </div>
+</nav>
+
+        
+    </header>
+    
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <h1>Find Your Inspiration</h1>
+                <p>Join our community, home to millions of photos and thousands of groups.</p>
+                <button class="cta-button">Start for Free</button>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="g15.avif" alt="About Us Image">
+                    </div>
+                    <div class="about-text">
+                        <h2>About Us</h2>
+                        <p>Welcome to our gallery, where each image tells a unique story. We believe in capturing moments that inspire, provoke thought, and celebrate beauty. Through our lens, we aim to share the world as we see it—vibrant, diverse, and endlessly fascinating. Explore our collection and discover the stories behind each frame.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+
+        <section id="gallery" class="gallery">
+            <div class="image-wrapper">
+                <img src="g1.avif" alt="Image 1" class="gallery-image">
+                <a class="download-button" href="g1.avif" download>Download</a>
+            </div>
+            <div class="image-wrapper">
+                <img src="g2.avif" alt="Image 2" class="gallery-image">
+                <a class="download-button" href="g2.avif" download>Download</a>
+            </div>
+        
+            <div class="image-wrapper">
+                <img src="g3.avif" alt="Image 3" class="gallery-image">
+                <a class="download-button" href="images/g3.avif" download>Download</a>
+            </div>
+            <div class="image-wrapper">
+                <img src="g4.avif" alt="Image 4" class="gallery-image">
+                <a class="download-button" href="g4.avif" download>Download</a>
+            </div>
+            <div class="image-wrapper">
+                <img src="g5.avif" alt="Image 5" class="gallery-image">
+                <a class="download-button" href="g5.avif" download>Download</a>
+            </div>
+            <div class="image-wrapper">
+                <img src="g6.avif" alt="Image 6" class="gallery-image">
+                <a class="download-button" href="g6.avif" download>Download</a>
+            </div>
+            <div class="image-wrapper">
+                <img src="g7.avif" alt="Image 7" class="gallery-image">
+                <a class="download-button" href="g7.avif" download>Download</a>
+            </div>
+            <div class="image-wrapper">
+                <img src="g8.avif" alt="Image 8" class="gallery-image">
+                <a class="download-button" href="g8.avif" download>Download</a>
+            </div>
+            <div class="image-wrapper">
+                <img src="g9.avif" alt="Image 9" class="gallery-image">
+                <a class="download-button" href="g9.avif" download>Download</a>
+            </div>
+            <div class="image-wrapper">
+                <img src="g10.avif" alt="Image 10" class="gallery-image">
+                <a class="download-button" href="g10.avif" download>Download</a>
+            </div>
+            <div class="image-wrapper">
+                <img src="g11.avif" alt="Image 11" class="gallery-image">
+                <a class="download-button" href="g11.avif" download>Download</a>
+            </div>
+            <div class="image-wrapper">
+                <img src="g12.avif" alt="Image 12" class="gallery-image">
+                <a class="download-button" href="g12.avif" download>Download</a>
+            </div>
+        </section>
+        
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Image Gallery. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Modal for Image Gallery -->
+    <div id="modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-image">
+        <div id="caption"></div>
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
